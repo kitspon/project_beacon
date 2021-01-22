@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.beaconapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Edit_user"></activity>
+        <activity android:name=".Main_Register" />
+        <activity android:name=".ListAllRoom" />
+        <activity android:name=".Navigationpage_outdoor" />
+        <activity android:name=".ListRoomForOutdoor" />
+        <activity android:name=".Checklocation" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Mapsindoor"
+            android:label="@string/title_activity_mapsindoor" />
+        <activity android:name=".ListBuilding_for_map" />
+        <activity android:name=".Main_USer" />
+        <activity android:name=".Main_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".List" />
+        <activity android:name=".Touch_Insert_Edit_Beacon" />
+        <activity android:name=".Main_Navigation" />
+        <activity android:name=".UpdateAndDelete_Building" />
+        <activity android:name=".Insert_map_floor" />
+        <activity android:name=".Touch_Insert_Arrow_Add_Beacon" />
+        <activity android:name=".UpdateAndDelete_Beacon" />
+        <activity android:name=".ListBeacon" />
+        <activity android:name=".Main_Building_Setting" />
+        <activity android:name=".ListRoomAndElevator" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Google_Navigation"
+            android:label="@string/title_activity_google__navigation" />
+        <activity android:name=".Main_Create_Building" />
+        <activity android:name=".ListBuilding" />
+        <activity android:name=".ListRoom" /> <!-- <activity android:name=".Searchpage" /> -->
+        <activity android:name=".NavigationPage" />
+        <activity android:name=".UpdateAndDelete_Room_Elevator" />
+        <activity android:name=".Select_Add_Type_Beacon" />
+        <activity android:name=".Beacon_AddElevator" />
+        <activity android:name=".Add_Room" />
+        <activity android:name=".Beacon_AddRoom" />
+        <activity android:name=".ScanBeacon" />
+        <activity android:name=".Main_Sub_Building_Setting" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

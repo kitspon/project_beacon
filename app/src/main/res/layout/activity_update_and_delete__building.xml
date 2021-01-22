@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+        <Button
+            android:id="@+id/update_back_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="back"
+            android:background="@drawable/shape_back"
+            android:textColor="#000000"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/update_bui_img"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image1"
+                    android:scaleType="centerCrop"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="306dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/update_bui_id"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_editview"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:hint="Building ID"
+                    android:textSize="20sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/update_bui_name"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_editview"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:hint="Building Name"
+                    android:textSize="20sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/update_Floors"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_editview"
+                    android:elevation="2dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Floors"
+                    android:inputType="numberSigned"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <EditText
+                    android:id="@+id/update_Latitude"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_editview"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:hint="Latitude"
+                    android:textSize="20sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/update_Longitude"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_editview"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:hint="Longitude"
+                    android:textSize="20sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <EditText
+                    android:id="@+id/update_Information"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/custom_editview"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:hint="Information"
+                    android:textSize="20sp"></EditText>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/update_up_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Update"
+                android:textColor="#FFF"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"></Button>
+
+            <Button
+                android:id="@+id/update_dl_btn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape"
+                android:text="Delete"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFF"
+                android:textSize="20sp"></Button>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

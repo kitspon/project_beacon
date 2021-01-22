@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_Building_Setting"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="598dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/building_list_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/set_create"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:background="@drawable/shape"
+                android:text="Create"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:fontFamily="@font/mclaren"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/design_default_color_on_primary"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

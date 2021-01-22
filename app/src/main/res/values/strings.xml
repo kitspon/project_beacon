@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bapp</string>
+    <string name="title_activity_google__navigation">Map</string>
+    <string name="title_activity_mapsindoor">Map</string>
+</resources>

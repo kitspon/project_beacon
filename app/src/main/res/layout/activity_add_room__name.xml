@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Room"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/create_back"
+                android:background="@drawable/shape_back"
+                android:textColor="#000000"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="Back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+
+
+            <EditText
+                android:id="@+id/text_name"
+                android:layout_width="300dp"
+                android:elevation="2dp"
+                android:background="@drawable/custom_editview"
+                android:layout_height="50dp"
+                android:hint="Input Name"
+                android:gravity="center"
+                android:inputType="textPersonName" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            ></LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textfloor"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="floors:"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textSize="24sp"/>
+
+            <Spinner
+                android:id="@+id/spin_floors"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_spinner"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:text="type:"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spin_typeset"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_spinner"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="319dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:id="@+id/ar_image"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image1"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+
+
+            <Button
+                android:id="@+id/btn_create"
+                android:background="@drawable/shape"
+                android:textColor="#FFF"
+                android:layout_marginRight="10dp"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:text="Create" />
+
+            <Button
+                android:id="@+id/btn_addfloors"
+                android:layout_width="142dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="10dp"
+                android:text="Set img Floors"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

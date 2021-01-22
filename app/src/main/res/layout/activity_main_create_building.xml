@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/creatbuild_back"
+            android:background="@drawable/shape_back"
+            android:textColor="#000000"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="Back" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/add_bui_img"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image1"
+                    android:scaleType="centerCrop"></ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="306dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/add_bui_id"
+                    android:background="@drawable/custom_editview"
+                    android:ems="10"
+                    android:elevation="2dp"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:hint="Building ID"
+                    android:textSize="20sp"></EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/add_bui_name"
+                    android:background="@drawable/custom_editview"
+                    android:ems="10"
+                    android:elevation="2dp"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:hint="Building Name"
+                    android:textSize="20sp"></EditText>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <EditText
+                    android:background="@drawable/custom_editview"
+                    android:ems="10"
+                    android:id="@+id/Floors"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:hint="Floors"
+                    android:elevation="2dp"
+                    android:textSize="20sp"
+                    android:inputType="numberSigned"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <EditText
+                    android:background="@drawable/custom_editview"
+                    android:ems="10"
+                    android:id="@+id/Latitude"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:elevation="2dp"
+                    android:hint="Latitude"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <EditText
+                    android:background="@drawable/custom_editview"
+                    android:id="@+id/Longitude"
+                    android:layout_width="300dp"
+                    android:elevation="2dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Longitude"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"></LinearLayout>
+
+                <EditText
+                    android:background="@drawable/custom_editview"
+                    android:id="@+id/Information"
+                    android:layout_width="300dp"
+                    android:elevation="2dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:hint="Information"
+                    android:textSize="20sp"></EditText>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/add_create_btn"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:background="@drawable/shape"
+            android:textColor="#FFF"
+            android:text="Add Building"
+            android:textSize="20sp"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

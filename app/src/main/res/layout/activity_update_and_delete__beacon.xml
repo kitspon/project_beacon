@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAndDelete_Beacon"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="546dp"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:background="@drawable/shape_back"
+            android:textColor="#000000"
+            android:id="@+id/edit_back_btn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:text="SelectRoom:" />
+
+        <LinearLayout
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/edit_main"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="274dp"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:text="Address:" />
+
+        <TextView
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:text="Room on the left:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/edit_l"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner" />
+
+            <ImageView
+                android:id="@+id/edit_left"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:src="@drawable/flag" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:text="Room on the right:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/edit_r"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner" />
+
+            <ImageView
+                android:id="@+id/edit_right"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:src="@drawable/flag" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:text="Room on the front:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/edit_f"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner" />
+
+            <ImageView
+                android:id="@+id/edit_front"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:src="@drawable/flag" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:text="Room on the back:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/edit_b"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_spinner" />
+
+            <ImageView
+                android:id="@+id/edit_back"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:src="@drawable/flag" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            >
+
+
+
+
+
+
+            <Button
+                android:id="@+id/edit_update"
+                android:background="@drawable/shape"
+                android:textColor="#FFF"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:text="Update"
+                />
+
+            <Button
+                android:id="@+id/edit_delete"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape"
+                android:layout_marginLeft="10dp"
+                android:text="Delete"
+                android:textColor="#FFF" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
